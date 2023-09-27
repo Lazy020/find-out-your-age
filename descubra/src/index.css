@@ -24,59 +24,66 @@ body {
 }
 
 h1 {
-  font-size: 2.8em;
-  margin-bottom: 20px;
-  color: #ff6b6b; /* Cor agradável para o título */
+  font-size: 2.2em; /* Tamanho elevado para o título */
+  margin-bottom: 20px; /* Espaço inferior reduzido */
+  color: #000; /* Título em preto */
+  font-family: 'Quicksand', sans-serif; /* Fonte fofa */
   text-align: center;
 }
 
 .input-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  align-items: center; /* Alinhar labels e inputs centralizados */
+  gap: 10px; /* Espaço entre os elementos */
+  margin-top: 20px; /* Espaço acima das labels */
 }
 
 .input-label {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  font-size: 1em; /* Tamanho das labels padrão */
+  font-family: 'Quicksand', sans-serif; /* Fonte fofa */
+  text-align: left; /* Alinhar à esquerda */
+  flex: 1; /* Permitir que a label cresça para ocupar o espaço disponível */
 }
 
 .input-field {
-  padding: 10px;
+  padding: 6px; /* Reduzir o preenchimento */
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1.2em;
+  border-radius: 6px; /* Reduzir o raio das bordas */
+  font-size: 1em; /* Tamanho padrão para os campos de entrada */
   color: #333;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s, box-shadow 0.3s;
+  flex: 1; /* Permitir que o input cresça para ocupar o espaço disponível */
 }
 
 .input-field:focus {
-  border-color: #ff6b6b; /* Cor de destaque quando focado */
+  border-color: #ff6b6b;
   box-shadow: 0px 2px 4px rgba(255, 107, 107, 0.2);
 }
 
 .calculate-button {
-  border: none;
-  padding: 12px 24px;
-  background-color: #ff6b6b; /* Cor de destaque para o botão */
-  color: #fff;
-  font-size: 1.2em;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  border: 1px solid #ff6b6b; /* Adicionar borda */
+  padding: 8px 16px; /* Tamanho ligeiramente reduzido para o botão */
+  background-color: #ff6b6b; /* Cor rosa */
+  color: #fff; /* Cor do texto */
+  font-size: 1em; /* Tamanho padrão para o botão */
+  border-radius: 6px; /* Reduzir o raio das bordas do botão */
+  cursor: pointer; /* Adicionar cursor */
+  transition: background-color 0.3s, color 0.3s; /* Transições de cor */
+  margin-top: 20px; /* Espaço acima do botão */
 }
 
 .calculate-button:hover {
-  background-color: #ff5252; /* Cor de destaque quando hover */
+  background-color: #e06363; /* Cor diferente no hover */
+  color: #fff; /* Cor do texto no hover */
+  cursor: pointer; /* Cursor de mãozinha no hover */
 }
 
 p {
-  font-size: 1.4em;
-  margin-top: 20px;
+  font-size: 1em; /* Tamanho padrão para o texto */
+  margin-top: 10px; /* Espaço superior reduzido */
   text-align: center;
   color: #666;
 }
