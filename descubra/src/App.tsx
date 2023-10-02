@@ -1,49 +1,39 @@
 import React, { useState } from 'react';
-import './App.css';
 
 function App() {
-  const [name, setName] = useState('');
-  const [yearOfBirth, setYearOfBirth] = useState('');
-  const [age, setAge] = useState('');
+  const [nome, setNome] = useState('');
+  const [dataNascimento, setDataNascimento] = useState('');
+  const [idade, setIdade] = useState('');
 
-  const calculateAge = () => {
-    const currentYear = new Date().getFullYear();
-    const birthYear = parseInt(yearOfBirth);
-    const calculatedAge = currentYear - birthYear;
-    setAge(`Olá ${name}, você tem ${calculatedAge} anos.`);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const hoje = new Date();
+    const nascimento = new Date(dataNascimento);
+    const idadeCalculada = hoje.getFullYear() - nascimento.getFullYear();
+    setIdade(idadeCalculada);
   };
 
   return (
-    <div className="App">
-      <h1>Descubra sua idade</h1>
-      <div className="input-container">
-        <label className="input-label">
-          Digite seu nome:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="input-field"
-          />
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Nome:
+          <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} required/>
         </label>
-
-        <label className="input-label">
-          Digite o ano que você nasceu:
-          <input
-            type="text"
-            value={yearOfBirth}
-            onChange={(e) => setYearOfBirth(e.target.value)}
-            className="input-field"
-          />
+        <label>
+          Data de Nascimento:
+          <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} required/>
         </label>
-      </div>
-
-      <button onClick={calculateAge} className="calculate-button">
-        Descobrir idade
-      </button>
-      {age && <p>{age}</p>}
+        <input type="submit" value="Enviar" />
+      </form>
+      {idade && (
+        <div>
+          <p>Nome: {nome}</p>
+          <p>Idade: {idade}</p>
+        </div>
+      )}
     </div>
   );
 }
 
-export default App;
+export default App

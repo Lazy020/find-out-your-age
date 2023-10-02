@@ -1,89 +1,71 @@
-/* App.css */
-:root {
-  font-family: 'Quicksand', sans-serif;
-  line-height: 1.5;
-  font-weight: 500;
-  color-scheme: light dark;
-  color: #333;
-  background-color: #f5f5f5;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+*{
+  box-sizing: border-box;
+  user-select: none;
 }
 
 body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf2e2;
   margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  height: 100vh;
 }
 
-h1 {
-  font-size: 2.2em; /* Tamanho elevado para o título */
-  margin-bottom: 20px; /* Espaço inferior reduzido */
-  color: #000; /* Título em preto */
-  font-family: 'Quicksand', sans-serif; /* Fonte fofa */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.input-container {
+label {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinhar labels e inputs centralizados */
-  gap: 10px; /* Espaço entre os elementos */
-  margin-top: 20px; /* Espaço acima das labels */
+  gap: 10px;
+  min-width: 200px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.input-label {
-  font-size: 1em; /* Tamanho das labels padrão */
-  font-family: 'Quicksand', sans-serif; /* Fonte fofa */
-  text-align: left; /* Alinhar à esquerda */
-  flex: 1; /* Permitir que a label cresça para ocupar o espaço disponível */
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #7c7676;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.input-field {
-  padding: 6px; /* Reduzir o preenchimento */
-  border: 1px solid #ccc;
-  border-radius: 6px; /* Reduzir o raio das bordas */
-  font-size: 1em; /* Tamanho padrão para os campos de entrada */
-  color: #333;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: border-color 0.3s, box-shadow 0.3s;
-  flex: 1; /* Permitir que o input cresça para ocupar o espaço disponível */
+input[type="submit"] {
+  background-color: #fb109d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
 }
 
-.input-field:focus {
-  border-color: #ff6b6b;
-  box-shadow: 0px 2px 4px rgba(255, 107, 107, 0.2);
+input[type="submit"]:hover {
+  background-color: #715567;
 }
 
-.calculate-button {
-  border: 1px solid #ff6b6b; /* Adicionar borda */
-  padding: 8px 16px; /* Tamanho ligeiramente reduzido para o botão */
-  background-color: #ff6b6b; /* Cor rosa */
-  color: #fff; /* Cor do texto */
-  font-size: 1em; /* Tamanho padrão para o botão */
-  border-radius: 6px; /* Reduzir o raio das bordas do botão */
-  cursor: pointer; /* Adicionar cursor */
-  transition: background-color 0.3s, color 0.3s; /* Transições de cor */
-  margin-top: 20px; /* Espaço acima do botão */
+div>div {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.calculate-button:hover {
-  background-color: #e06363; /* Cor diferente no hover */
-  color: #fff; /* Cor do texto no hover */
-  cursor: pointer; /* Cursor de mãozinha no hover */
-}
-
-p {
-  font-size: 1em; /* Tamanho padrão para o texto */
-  margin-top: 10px; /* Espaço superior reduzido */
-  text-align: center;
-  color: #666;
+div>div>p {
+  margin: 0;
+  font-weight: bold;
 }
