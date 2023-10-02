@@ -14,8 +14,8 @@ function App() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="container">
+      <form onSubmit={handleSubmit} className="form">
         <label>
           Nome:
           <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} required/>
@@ -24,10 +24,10 @@ function App() {
           Data de Nascimento:
           <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} required/>
         </label>
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar" className="submit-button" />
       </form>
       {idade && (
-        <div>
+        <div className="result">
           <p>Nome: {nome}</p>
           <p>Idade: {idade}</p>
         </div>
@@ -36,4 +36,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

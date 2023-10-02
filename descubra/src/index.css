@@ -1,11 +1,15 @@
-*{
+* {
   box-sizing: border-box;
   user-select: none;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #ecf2e2;
+  background-image: url(https://getwallpapers.com/wallpaper/full/0/f/d/909560-large-fruits-basket-wallpapers-2000x1415-for-lockscreen.jpg); /* Substitua pelo caminho da sua imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* Isso pode ser adicionado para manter a imagem fixa enquanto a página rola */
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,6 +17,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+/* Restante do seu CSS permanece o mesmo */
+
 
 form {
   background-color: #ffffff;
@@ -68,4 +75,45 @@ div>div {
 div>div>p {
   margin: 0;
   font-weight: bold;
+}
+
+/* Restante do seu CSS */
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container na tela */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: #fb109d;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #ff147f;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7); /* Cor branca com transparência de 30% */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
