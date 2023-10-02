@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed; /* Isso pode ser adicionado para manter a imagem fixa enquanto a página rola */
+  background-attachment: fixed; 
   margin: 0;
   padding: 0;
   display: flex;
@@ -17,8 +17,6 @@ body {
   align-items: center;
   height: 100vh;
 }
-
-
 
 form {
   background-color: #ffffff;
@@ -41,10 +39,10 @@ label {
 input[type="text"],
 input[type="date"] {
   width: 100%;
-  padding: 12px; /* Mais espaço interno */
-  margin-bottom: 20px; /* Mais espaço inferior */
-  border: 2px solid #fb109d; /* Borda mais espessa */
-  border-radius: 12px; /* Border mais arredondado */
+  padding: 12px; 
+  margin-bottom: 20px; 
+  border: 2px solid #fb109d;
+  border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
   transition: border-color 0.3s ease;
@@ -56,7 +54,7 @@ input[type="submit"] {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 7px;
   cursor: pointer;
   font-size: 18px;
 }
@@ -77,35 +75,22 @@ div>div>p {
   margin: 0;
   font-weight: bold;
 }
-/* Restante do seu CSS */
 
 .container {
-  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  background-color: rgba(255, 255, 255, 0.9); 
   border-radius: 8px;
   padding: 20px;
   text-align: center;
-  max-width: 400px; /* Largura máxima do container */
-  margin: 0 auto; /* Centraliza o container na tela */
+  max-width: 400px; 
+  margin: 0 auto; 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .form {
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 12px; /* Border mais arredondado para o formulário */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.submit-button {
-  background-color: #fb109d;
-  color: #fff;
-  padding: 12px 24px; /* Mais espaço interno */
-  border: none;
-  border-radius: 12px; /* Border mais arredondado */
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 12px; 
+  box-shadow: 0px 0px 10px rgba(255, 20, 127, 0.751);
 }
 
 .submit-button:hover {
@@ -115,13 +100,7 @@ div>div>p {
 .result {
   margin-top: 20px;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.7); /* Cor branca com transparência de 30% */
+  background-color: rgba(255, 255, 255, 0.7); 
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(255, 20, 127, 0.751);
 }
-
-.date-input:focus {
-  border-color: #ff147f; /* Cor da borda ao focar */
-}
-
-

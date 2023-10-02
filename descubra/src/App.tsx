@@ -22,7 +22,7 @@ function App() {
             type="text"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
-            placeholder="Digite seu nome aqui..."
+            placeholder="Digite seu nome aqui..." 
             required
           />
         </label>
@@ -33,7 +33,7 @@ function App() {
             value={dataNascimento}
             onChange={(e) => setDataNascimento(e.target.value)}
             placeholder="Escolha uma data"
-            className="date-input" 
+            className="date-input"
             required
           />
         </label>
@@ -49,4 +49,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
