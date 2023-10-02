@@ -18,11 +18,24 @@ function App() {
       <form onSubmit={handleSubmit} className="form">
         <label>
           Nome:
-          <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} required/>
+          <input
+            type="text"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            placeholder="Digite seu nome aqui..."
+            required
+          />
         </label>
         <label>
           Data de Nascimento:
-          <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} required/>
+          <input
+            type="date"
+            value={dataNascimento}
+            onChange={(e) => setDataNascimento(e.target.value)}
+            placeholder="Escolha uma data"
+            className="date-input" 
+            required
+          />
         </label>
         <input type="submit" value="Enviar" className="submit-button" />
       </form>
